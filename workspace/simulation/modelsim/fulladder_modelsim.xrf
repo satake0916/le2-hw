@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, /home/016/a0168127/le2hard3/workspace/halfadder.bdf
+source_file = 1, /home/016/a0168127/le2hard3/workspace/fulladder.bdf
+source_file = 1, /home/016/a0168127/le2hard3/workspace/db/fulladder.cbx.xml
+design_name = fulladder
+instance = comp, \pin_name4~output , pin_name4~output, fulladder, 1
+instance = comp, \pin_name5~output , pin_name5~output, fulladder, 1
+instance = comp, \pin_name1~input , pin_name1~input, fulladder, 1
+instance = comp, \pin_name2~input , pin_name2~input, fulladder, 1
+instance = comp, \pin_name3~input , pin_name3~input, fulladder, 1

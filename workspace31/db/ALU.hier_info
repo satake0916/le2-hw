@@ -1,0 +1,483 @@
+|adder16bit
+sum[0] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+sum[6] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+sum[7] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+sum[8] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+sum[9] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+sum[10] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+sum[11] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+sum[12] <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+sum[13] <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+sum[14] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+sum[15] <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => fulladder:inst.A
+A[1] => fulladder:inst1.A
+A[2] => fulladder:inst3.A
+A[3] => fulladder:inst4.A
+A[4] => fulladder:inst5.A
+A[5] => fulladder:inst6.A
+A[6] => fulladder:inst7.A
+A[7] => fulladder:inst8.A
+A[8] => fulladder:inst9.A
+A[9] => fulladder:inst10.A
+A[10] => fulladder:inst11.A
+A[11] => fulladder:inst12.A
+A[12] => fulladder:inst13.A
+A[13] => fulladder:inst14.A
+A[14] => fulladder:inst15.A
+A[15] => fulladder:inst16.A
+B[0] => fulladder:inst.B
+B[1] => fulladder:inst1.B
+B[2] => fulladder:inst3.B
+B[3] => fulladder:inst4.B
+B[4] => fulladder:inst5.B
+B[5] => fulladder:inst6.B
+B[6] => fulladder:inst7.B
+B[7] => fulladder:inst8.B
+B[8] => fulladder:inst9.B
+B[9] => fulladder:inst10.B
+B[10] => fulladder:inst11.B
+B[11] => fulladder:inst12.B
+B[12] => fulladder:inst13.B
+B[13] => fulladder:inst14.B
+B[14] => fulladder:inst15.B
+B[15] => fulladder:inst16.B
+op => inst17.IN1
+op => inst18.IN1
+op => inst19.IN1
+op => inst20.IN1
+op => inst21.IN1
+op => inst22.IN1
+op => inst23.IN1
+op => inst24.IN1
+op => inst25.IN1
+op => inst26.IN1
+op => inst27.IN1
+op => inst28.IN1
+op => inst29.IN1
+op => inst30.IN1
+op => inst31.IN1
+op => inst32.IN1
+
+
+|adder16bit|fulladder:inst
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst1
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst1|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst1|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst3
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst3|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst3|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst4
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst4|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst4|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst5
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst5|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst5|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst6
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst6|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst6|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst7
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst7|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst7|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst8
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst8|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst8|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst9
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst9|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst9|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst10
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst10|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst10|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst11
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst11|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst11|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst12
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst12|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst12|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst13
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst13|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst13|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst14
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst14|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst14|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst15
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst15|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst15|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst16
+Cout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:half1.A
+B => halfadder:half1.B
+Cin => halfadder:inst1.B
+Sum <= halfadder:inst1.Sum
+
+
+|adder16bit|fulladder:inst16|halfadder:inst1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder16bit|fulladder:inst16|halfadder:half1
+Sum <= nand2.DB_MAX_OUTPUT_PORT_TYPE
+B => nand2.IN0
+B => nand1.IN0
+A => nand2.IN1
+A => nand1.IN1
+Carry <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+
+

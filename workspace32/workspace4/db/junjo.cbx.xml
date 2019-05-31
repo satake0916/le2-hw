@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="junjo">
+		<CBX_INST_ENTRY INSTANCE_NAME="|junjo|alu:alu12|mux5:inst|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_2tc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|junjo|alu:alu14|mux5:inst|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_2tc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|junjo|alu:alu32|mux5:inst|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_2tc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|junjo|alu:alu34|mux5:inst|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_2tc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|junjo|mux6_16:mux|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_3tc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|junjo|alu:alu13|mux5:inst|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_2tc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|junjo|alu:alu24|mux5:inst|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_2tc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

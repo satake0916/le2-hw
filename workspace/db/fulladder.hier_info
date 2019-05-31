@@ -1,0 +1,26 @@
+|fulladder
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => halfadder:inst.pin_name1
+pin_name5 <= halfadder:inst1.pin_name4
+pin_name2 => ~NO_FANOUT~
+pin_name3 => ~NO_FANOUT~
+
+
+|fulladder|halfadder:inst1
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder|halfadder:inst
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

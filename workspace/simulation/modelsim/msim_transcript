@@ -1,0 +1,56 @@
+# do fulladder_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {fulladder_7_1200mv_100c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# 
+# vlog -vlog01compat -work work +incdir+/home/016/a0168127/le2hard3/workspace/simulation/modelsim {/home/016/a0168127/le2hard3/workspace/simulation/modelsim/fulladder_test1.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fulladder_vlg_tst
+# 
+# Top level modules:
+# 	fulladder_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  test1
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test1 
+# ** Error: (vsim-3170) Could not find '/home/016/a0168127/le2hard3/workspace/simulation/modelsim/gate_work.test1'.
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./fulladder_run_msim_gate_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+/home/016/a0168127/le2hard3/workspace/simulation/modelsim -O0 /home/016/a0168127/le2hard3/workspace/simulation/modelsim/fulladder_test1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fulladder_vlg_tst
+# 
+# Top level modules:
+# 	fulladder_vlg_tst
+vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps gate_work.fulladder_vlg_tst
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps gate_work.fulladder_vlg_tst 
+# Loading work.fulladder_vlg_tst
+# Loading work.fulladder
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# Loading instances from fulladder_7_1200mv_100c_v_slow.sdo
+# Loading timing data from fulladder_7_1200mv_100c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /fulladder_vlg_tst File: /home/016/a0168127/le2hard3/workspace/simulation/modelsim/fulladder_test1.vt
+add wave -position end  sim:/fulladder_vlg_tst/pin_name1
+add wave -position end  sim:/fulladder_vlg_tst/pin_name2
+add wave -position end  sim:/fulladder_vlg_tst/pin_name3
+add wave -position end  sim:/fulladder_vlg_tst/pin_name4
+add wave -position end  sim:/fulladder_vlg_tst/pin_name5
+run -all
+# Running testbench

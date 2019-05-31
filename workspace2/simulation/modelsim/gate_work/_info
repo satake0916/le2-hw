@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/016/a0168127/le2hard3/workspace2/simulation/modelsim
+vadder4bit
+!i10b 1
+!s100 6jNDOjKm537MDDZcHP0@g3
+IE:oiH]BO<[lz]6nKPR0XA3
+VHI;f>o]@7<5Cg>A0PE]I@0
+Z1 d/home/016/a0168127/le2hard3/workspace2/simulation/modelsim
+w1514262387
+8/home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo
+F/home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1514262475.394678
+!s107 /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|-O0|/home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0

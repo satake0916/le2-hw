@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/016/a0168127/le2hard3/workspace31/simulation/modelsim
+vadder16bit
+Ie>`456ihcSPM<]UXBWZ:i3
+VLX18BSP5=Gz5j04<MGM_@0
+Z1 d/home/016/a0168127/le2hard3/workspace31/simulation/modelsim
+w1515481648
+8ALU_7_1200mv_100c_slow.vo
+FALU_7_1200mv_100c_slow.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 2`7f;2ZEKR3FQ617Ei;a03
+!s85 0
+!s108 1515481661.136310
+!s107 ALU_7_1200mv_100c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|ALU_7_1200mv_100c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vALU_vlg_tst
+!i10b 1
+!s100 0:;NmbB=O00Y5KlPi>lXm1
+I@4_59:Wa]HiQW1D[kzS]k2
+V:e5YLP>h8G:j5nm57>TDa3
+R1
+w1515481009
+8/home/016/a0168127/le2hard3/workspace31/simulation/modelsim/ALU_test4.vt
+F/home/016/a0168127/le2hard3/workspace31/simulation/modelsim/ALU_test4.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1515481744.887814
+!s107 /home/016/a0168127/le2hard3/workspace31/simulation/modelsim/ALU_test4.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/016/a0168127/le2hard3/workspace31/simulation/modelsim|-O0|/home/016/a0168127/le2hard3/workspace31/simulation/modelsim/ALU_test4.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+/home/016/a0168127/le2hard3/workspace31/simulation/modelsim -O0
+n@a@l@u_vlg_tst

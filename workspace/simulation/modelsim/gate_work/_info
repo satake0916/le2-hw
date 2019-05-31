@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/016/a0168127/le2hard3/workspace/simulation/modelsim
+vfulladder
+Ig03cTWBXR^]84o<cJ<jMS3
+VdQ[NECZ1I2XQS`fD2;CE`0
+Z1 d/home/016/a0168127/le2hard3/workspace/simulation/modelsim
+w1513662759
+8fulladder_7_1200mv_100c_slow.vo
+Ffulladder_7_1200mv_100c_slow.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 ?TobJl5E>zf987JbQe8F>2
+!s85 0
+!s108 1513662856.674767
+!s107 fulladder_7_1200mv_100c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|fulladder_7_1200mv_100c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vfulladder_vlg_tst
+!i10b 1
+!s100 mW@n0[`53oV83ZYGg3dN<2
+IW@Y^B@Cle1h24``Y5>`XN3
+V9]Tmc1OJ;:0Fl3DP6JczL0
+R1
+w1513661344
+8/home/016/a0168127/le2hard3/workspace/simulation/modelsim/fulladder_test1.vt
+F/home/016/a0168127/le2hard3/workspace/simulation/modelsim/fulladder_test1.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1513662876.665679
+!s107 /home/016/a0168127/le2hard3/workspace/simulation/modelsim/fulladder_test1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/016/a0168127/le2hard3/workspace/simulation/modelsim|-O0|/home/016/a0168127/le2hard3/workspace/simulation/modelsim/fulladder_test1.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+/home/016/a0168127/le2hard3/workspace/simulation/modelsim -O0

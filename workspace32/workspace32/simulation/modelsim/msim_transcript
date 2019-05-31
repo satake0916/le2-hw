@@ -1,0 +1,59 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do alu_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {alu_7_1200mv_100c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim {C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim/alu_test1.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_vlg_tst
+# 
+# Top level modules:
+# 	alu_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  test1
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test1 
+# ** Error: (vsim-3170) Could not find 'C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim/gate_work.test1'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./alu_run_msim_gate_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim -O0 C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim/alu_test1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_vlg_tst
+# 
+# Top level modules:
+# 	alu_vlg_tst
+vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps gate_work.alu_vlg_tst
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps gate_work.alu_vlg_tst 
+# Loading work.alu_vlg_tst
+# Loading work.alu
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from alu_7_1200mv_100c_v_slow.sdo
+# Loading timing data from alu_7_1200mv_100c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_vlg_tst File: C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim/alu_test1.vt
+add wave -position end  sim:/alu_vlg_tst/dataA
+add wave -position end  sim:/alu_vlg_tst/dataB
+add wave -position end  sim:/alu_vlg_tst/opcode
+add wave -position end  sim:/alu_vlg_tst/out
+run -all
+# Running testbench

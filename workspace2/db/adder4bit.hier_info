@@ -1,0 +1,126 @@
+|adder4bit
+Carry <= fulladder:inst3.pin_name4
+A[0] => ~NO_FANOUT~
+A[1] => fulladder:inst3.pin_name1
+A[1] => fulladder:inst2.pin_name1
+A[1] => fulladder:inst.pin_name1
+A[1] => fulladder:inst1.pin_name1
+A[2] => ~NO_FANOUT~
+A[3] => ~NO_FANOUT~
+B[0] => ~NO_FANOUT~
+B[1] => fulladder:inst3.pin_name2
+B[1] => fulladder:inst2.pin_name2
+B[1] => fulladder:inst.pin_name2
+B[1] => fulladder:inst1.pin_name2
+B[2] => ~NO_FANOUT~
+B[3] => ~NO_FANOUT~
+Sum[0] <= <GND>
+Sum[1] <= <GND>
+Sum[2] <= <GND>
+Sum[3] <= <GND>
+
+
+|adder4bit|fulladder:inst3
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => halfadder:inst.pin_name1
+pin_name5 <= halfadder:inst1.pin_name4
+pin_name2 => ~NO_FANOUT~
+pin_name3 => ~NO_FANOUT~
+
+
+|adder4bit|fulladder:inst3|halfadder:inst1
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4bit|fulladder:inst3|halfadder:inst
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4bit|fulladder:inst2
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => halfadder:inst.pin_name1
+pin_name5 <= halfadder:inst1.pin_name4
+pin_name2 => ~NO_FANOUT~
+pin_name3 => ~NO_FANOUT~
+
+
+|adder4bit|fulladder:inst2|halfadder:inst1
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4bit|fulladder:inst2|halfadder:inst
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4bit|fulladder:inst
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => halfadder:inst.pin_name1
+pin_name5 <= halfadder:inst1.pin_name4
+pin_name2 => ~NO_FANOUT~
+pin_name3 => ~NO_FANOUT~
+
+
+|adder4bit|fulladder:inst|halfadder:inst1
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4bit|fulladder:inst|halfadder:inst
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4bit|fulladder:inst1
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => halfadder:inst.pin_name1
+pin_name5 <= halfadder:inst1.pin_name4
+pin_name2 => ~NO_FANOUT~
+pin_name3 => ~NO_FANOUT~
+
+
+|adder4bit|fulladder:inst1|halfadder:inst1
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4bit|fulladder:inst1|halfadder:inst
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN0
+pin_name1 => inst.IN1
+pin_name1 => inst1.IN1
+pin_name4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

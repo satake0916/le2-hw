@@ -1,0 +1,118 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "01/13/2018 15:10:32"
+                                                                                
+// Verilog Test Bench template for design : junjo
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module junjo_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clock;
+reg [15:0] data;
+reg [3:0] opcode;
+reg reset;
+reg [2:0] sel;
+// wires                                               
+wire [15:0]  out1;
+wire [15:0]  out2;
+wire [15:0]  out3;
+wire [15:0]  out4;
+wire [15:0]  test1;
+
+// assign statements (if any)                          
+junjo i1 (
+// port map - connection between master ports and signals/registers   
+	.clock(clock),
+	.data(data),
+	.opcode(opcode),
+	.out1(out1),
+	.out2(out2),
+	.out3(out3),
+	.out4(out4),
+	.reset(reset),
+	.sel(sel),
+	.test1(test1)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin
+
+clock <= 0;
+data <= 16'b0000000000000000;
+opcode <= 4'b0000;
+reset <= 0;
+sel <= 3'b000;                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin
+
+#120
+reset <= 1;
+#50
+data <= 16'b0110100101001110;
+#100
+data <= 16'b0011111100100000;
+#100
+data <= 16'b0101001000100010;
+#100
+data <= 16'b1001100111100101;
+#100
+opcode <= 4'b0000;
+sel <= 3'b000;
+#100
+opcode <= 4'b0001;
+sel <= 3'b001;
+#100
+opcode <= 4'b0010;
+sel <= 3'b010;
+#100
+opcode <= 4'b0011;
+sel <= 3'b011;
+#500
+reset <= 0;                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end
+
+always begin
+        clock = 0;
+		#50
+		clock = 1;
+		#50;
+end
+                                                   
+endmodule
+
+

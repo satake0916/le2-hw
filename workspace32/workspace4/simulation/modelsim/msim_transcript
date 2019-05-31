@@ -1,0 +1,73 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do junjo_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {junjo_7_1200mv_100c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module junjo
+# 
+# Top level modules:
+# 	junjo
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/le2hard3/workspace4/simulation/modelsim {C:/altera/13.0sp1/le2hard3/workspace4/simulation/modelsim/junjo_test3.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module junjo_vlg_tst
+# 
+# Top level modules:
+# 	junjo_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  test3
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test3 
+# ** Error: (vsim-3170) Could not find 'C:/altera/13.0sp1/le2hard3/workspace4/simulation/modelsim/gate_work.test3'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./junjo_run_msim_gate_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/le2hard3/workspace4/simulation/modelsim -O0 C:/altera/13.0sp1/le2hard3/workspace4/simulation/modelsim/junjo_test3.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module junjo_vlg_tst
+# 
+# Top level modules:
+# 	junjo_vlg_tst
+vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps gate_work.junjo_vlg_tst
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps gate_work.junjo_vlg_tst 
+# Loading work.junjo_vlg_tst
+# Loading work.junjo
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from junjo_7_1200mv_100c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from junjo_7_1200mv_100c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /junjo_vlg_tst File: C:/altera/13.0sp1/le2hard3/workspace4/simulation/modelsim/junjo_test3.vt
+add wave -position end  sim:/junjo_vlg_tst/clock
+add wave -position end  sim:/junjo_vlg_tst/data
+add wave -position end  sim:/junjo_vlg_tst/ena1
+add wave -position end  sim:/junjo_vlg_tst/ena2
+add wave -position end  sim:/junjo_vlg_tst/opcode
+add wave -position end  sim:/junjo_vlg_tst/reset
+add wave -position end  sim:/junjo_vlg_tst/sel
+add wave -position end  sim:/junjo_vlg_tst/out1
+add wave -position end  sim:/junjo_vlg_tst/out2
+add wave -position end  sim:/junjo_vlg_tst/out3
+add wave -position end  sim:/junjo_vlg_tst/out4
+run -all
+# Running testbench
+# Break key hit 
+# Simulation stop requested.

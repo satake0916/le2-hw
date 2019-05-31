@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\le2hard3\workspace32\simulation\modelsim
+valu
+IFlCzc9h2FM3]IaY<nBhE]3
+VVP@_3icL>o^hI<2f[CN@60
+Z1 dC:\altera\13.0sp1\le2hard3\workspace32\simulation\modelsim
+w1515830562
+8alu_7_1200mv_100c_slow.vo
+Falu_7_1200mv_100c_slow.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 QW<5B`Zbl?nfgDSVdRge>1
+!s85 0
+!s108 1515830580.936000
+!s107 alu_7_1200mv_100c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|alu_7_1200mv_100c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+valu_vlg_tst
+!i10b 1
+!s100 13z_R9fAP:DzBQV6dOH:Q0
+I5BX@_SHXcKV9UW;j[Ocgl2
+V4@Qz@EdL77HUFgW1UMdE[0
+R1
+w1515734485
+8C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim/alu_test1.vt
+FC:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim/alu_test1.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1515830588.980000
+!s107 C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim/alu_test1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim|-O0|C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim/alu_test1.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/altera/13.0sp1/le2hard3/workspace32/simulation/modelsim -O0

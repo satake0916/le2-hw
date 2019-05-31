@@ -1,0 +1,103 @@
+# do adder4bit_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {adder4bit_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder4bit
+# 
+# Top level modules:
+# 	adder4bit
+# 
+# vlog -vlog01compat -work work +incdir+/home/016/a0168127/le2hard3/workspace2/simulation/modelsim {/home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_test2.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder4bit_vlg_tst
+# ** Error: /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_test2.vt(63): near "B": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./adder4bit_run_msim_gate_verilog.do line 10
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+/home/016/a0168127/le2hard3/workspace2/simulation/modelsim {/home/016/a0168127/le2hard3/workspace2/simulation/mo..."
+vlog -vlog01compat -work work +incdir+. -O0 /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder4bit
+# 
+# Top level modules:
+# 	adder4bit
+vsim -L cycloneive_ver -do adder4bit_run_msim_gate_verilog.do -l msim_transcript -i gate_work.adder4bit
+# vsim -L cycloneive_ver -do adder4bit_run_msim_gate_verilog.do -l msim_transcript -i gate_work.adder4bit 
+# Loading gate_work.adder4bit
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(94): Instantiation of 'cycloneiv_io_obuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(107): Instantiation of 'cycloneiv_io_obuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(120): Instantiation of 'cycloneiv_io_obuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(133): Instantiation of 'cycloneiv_io_obuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(146): Instantiation of 'cycloneiv_io_obuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(156): Instantiation of 'cycloneiv_io_ibuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(166): Instantiation of 'cycloneiv_io_ibuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(176): Instantiation of 'cycloneiv_io_ibuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(186): Instantiation of 'cycloneiv_io_ibuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(196): Instantiation of 'cycloneiv_io_ibuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(206): Instantiation of 'cycloneiv_io_ibuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(216): Instantiation of 'cycloneiv_io_ibuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/adder4bit_6_1200mv_85c_slow.vo(226): Instantiation of 'cycloneiv_io_ibuf' failed. The design unit was not found.
+#         Region: /adder4bit
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneive
+#             /home/016/a0168127/le2hard3/workspace2/simulation/modelsim/gate_work
+# Error loading design
+# Load canceled

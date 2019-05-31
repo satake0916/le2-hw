@@ -1,0 +1,108 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "01/11/2018 20:21:01"
+                                                                                
+// Verilog Test Bench template for design : alu
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module alu_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [15:0] dataA;
+reg [15:0] dataB;
+reg [3:0] opcode;
+// wires                                               
+wire [15:0]  out;
+
+// assign statements (if any)                          
+alu i1 (
+// port map - connection between master ports and signals/registers   
+	.dataA(dataA),
+	.dataB(dataB),
+	.opcode(opcode),
+	.out(out)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin
+
+dataA <= 16'b0000000000000000;
+dataB <= 16'b0000000000000000;
+opcode <= 4'b0000;                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin
+
+#100
+dataB <= 16'b0000000000110011; 
+
+#100
+dataA <= 16'b0000001111100101;
+
+#100
+opcode <= 4'b0001;
+
+#100
+dataA <= 16'b1100111100000110;
+
+#100
+dataB <= 16'b0101000000111010;
+
+#100
+opcode <= 4'b0010;
+
+#100
+dataA <= 16'b0111000000101101;
+
+#100
+opcode <= 4'b0011;
+
+#100
+dataB <= 16'b0011111011011101;
+
+#100
+opcode <= 4'b0100;
+
+#100
+dataA <= 16'b101100100000100;
+
+#100
+opcode <= 4'b0000;
+
+#100
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+
